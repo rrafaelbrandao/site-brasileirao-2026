@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brasileirão 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header-principal {
+            border-width: 10px;
+            border-style: solid;
+            border-color: #ffffff #808080;
+            background-color: blue;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .partidas, .partida {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .clube {
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-position: center;
+            border: 5px solid black;
+        }
+
+        .placar, .versus {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        /* Escudos dos times */
+        .vitoria {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/LHSM6VchpkI4NIptoSTHOg_64x64.png);
+        }
+
+        .remo {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/bENrK5iSMF6sXrEkDNNxng_64x64.png);
+        }
+
+        .atletico-mineiro {
+            background-image: url(//ssl.gstatic.com/onebox/media/sports/logos/optimized/q9fhEsgpuyRq58OgmSndcQ_64x64.png)
+        }
+
+        .palmeiras {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/7spurne-xDt2p6C0imYYNA_96x96.png);
+        }
+
+
+
+    </style>
 </head>
 <body>
-    
+    <header class="header-principal">
+        BRASILEIRÃO 2026
+    </header>
+    <section id="rodada-1">
+        <h2>RODADA 1 DE 38</h2>
+        <div class="partidas">
+            <div class="partida">
+                <div class="clube vitoria"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">0</div>
+                <div class="clube remo"></div>
+            </div>
+             <div class="partida">
+                <div class="clube atletico-mineiro"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">2</div>
+                <div class="clube palmeiras"></div>
+            </div>
+           
+
+        </div>
+        </div>
+        
+        
+    </section>
 </body>
 </html>
