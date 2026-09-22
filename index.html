@@ -5,25 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasileirão 2026</title>
     <style>
+        /* Corpo da página */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        /* Cabeçalho da página */
         .header-principal {
             border-width: 10px;
             border-style: solid;
-            border-color: #ffffff #808080;
-            background-color: blue;
+            border-color: #808080 #bdbcbc ;
+            background-color: rgb(14, 150, 1);
             font-size: 40px;
             text-align: center;
             color: white;
         }
+        /* Conteúdo principal */
 
-        .partidas, .partida {
+        .rodada {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #808080 #bdbcbc;
+            background-color: #6e6e6c;
+            color: #f4f4f4;
+        }
+
+        .partidas {
             display: flex;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .partida {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             gap: 10px;
         }
 
@@ -43,7 +71,7 @@
             text-align: center;
         }
         
-        /* Escudos dos times */
+        /* Escudo dos times */
         .vitoria {
             background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/LHSM6VchpkI4NIptoSTHOg_64x64.png);
         }
@@ -60,7 +88,69 @@
             background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/7spurne-xDt2p6C0imYYNA_96x96.png);
         }
 
+        .coritiba {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/LaFlBADLmsjHfGTehCYtuA_64x64.png);
+        }
 
+        .bragantino {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/lMyw2zn1Z4cdkaxKJWnsQw_96x96.png);
+        }
+
+        .internacional {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OWVFKuHrQuf4q2Wk0hEmSA_96x96.png);
+        }
+
+        .athletico-paranaense {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/9LkdBR4L5plovKM8eIy7nQ_96x96.png);
+        }
+
+        .fluminense {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/fCMxMMDF2AZPU7LzYKSlig_96x96.png);
+        }
+
+        .gremio {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/Ku-73v_TW9kpex-IEGb0ZA_96x96.png);
+        }
+
+        .chapecoense {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/K7JQUKTRsuXfO9YrD5dq5g_96x96.png);
+        }
+
+        .santos {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/VHdNOT6wWOw_vJ38GMjMzg_96x96.png);
+        }
+
+        .corinthians {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/tCMSqgXVHROpdCpQhzTo1g_96x96.png);
+        }
+
+        .bahia {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/nIdbR6qIUDyZUBO9vojSPw_96x96.png);
+        }
+
+        .sao-paulo {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/4w2Z97Hf9CSOqICK3a8AxQ_96x96.png);
+        }
+
+        .flamengo {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/orE554NToSkH6nuwofe7Yg_96x96.png);
+        }
+
+        .mirassol {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5J3JY7fcdiDYU5rbPW7AKA_96x96.png);
+        }
+
+        .vasco {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/hHwT8LwRmYCAGxQ-STLxYA_96x96.png);
+        }
+
+        .botafogo {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/KLDWYp-H8CAOT9H_JgizRg_96x96.png);
+        }
+
+        .cruzeiro {
+            background-image: url(https://ssl.gstatic.com/onebox/media/sports/logos/optimized/Tcv9X__nIh-6wFNJPMwIXQ_96x96.png);
+        }
 
     </style>
 </head>
@@ -69,7 +159,7 @@
         BRASILEIRÃO 2026
     </header>
     <section id="rodada-1">
-        <h2>RODADA 1 DE 38</h2>
+        <h2 class="rodada">RODADA 1 DE 38</h2>
         <div class="partidas">
             <div class="partida">
                 <div class="clube vitoria"></div>
@@ -85,12 +175,129 @@
                 <div class="placar">2</div>
                 <div class="clube palmeiras"></div>
             </div>
-           
-
-        </div>
-        </div>
-        
-        
+            <div class="partida">
+                <div class="clube coritiba"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">0</div>
+                <div class="clube bragantino"></div>
+            </div>
+            <div class="partida">
+                <div class="clube internacional"></div>
+                <div class="placar">0</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube athletico-paranaense"></div>
+            </div>
+            <div class="partida">
+                <div class="clube fluminense"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube gremio"></div>
+            </div>
+            <div class="partida">
+                <div class="clube chapecoense"></div>
+                <div class="placar">4</div>
+                <div class="versus">x</div>
+                <div class="placar">2</div>
+                <div class="clube santos"></div>
+            </div>
+            <div class="partida">
+                <div class="clube corinthians"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">2</div>
+                <div class="clube bahia"></div>
+            </div>
+            <div class="partida">
+                <div class="clube sao-paulo"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube flamengo"></div>
+            </div>
+            <div class="partida">
+                <div class="clube mirassol"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube santos"></div>
+            </div>
+            <div class="partida">
+                <div class="clube botafogo"></div>
+                <div class="placar">4</div>
+                <div class="versus">x</div>
+                <div class="placar">0</div>
+                <div class="clube cruzeiro"></div>
+            </div>
+        </div> 
     </section>
+    <section id="rodada-2">
+        <h2 class="rodada">RODADA 2 DE 38</h2>
+        <div class="partidas">
+            <div class="partida">
+                <div class="clube flamengo"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube internacional"></div>
+            </div>
+             <div class="partida">
+                <div class="clube bragantino"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">0</div>
+                <div class="clube atletico-mineiro"></div>
+            </div>
+            <div class="partida">
+                <div class="clube santos"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube sao-paulo"></div>
+            </div>
+            <div class="partida">
+                <div class="clube remo"></div>
+                <div class="placar">2</div>
+                <div class="versus">x</div>
+                <div class="placar">2</div>
+                <div class="clube mirassol"></div>
+            </div>
+            <div class="partida">
+                <div class="clube palmeiras"></div>
+                <div class="placar">5</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube vitoria"></div>
+            </div>
+            <div class="partida">
+                <div class="clube gremio"></div>
+                <div class="placar">5</div>
+                <div class="versus">x</div>
+                <div class="placar">3</div>
+                <div class="clube botafogo"></div>
+            </div>
+            <div class="partida">
+                <div class="clube bahia"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube fluminense"></div>
+            </div>
+            <div class="partida">
+                <div class="clube vasco"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">1</div>
+                <div class="clube chapecoense"></div>
+            </div>
+            <div class="partida">
+                <div class="clube cruzeiro"></div>
+                <div class="placar">1</div>
+                <div class="versus">x</div>
+                <div class="placar">2</div>
+                <div class="clube coritiba"></div>
+            </div>
 </body>
 </html>
