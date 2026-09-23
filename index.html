@@ -26,7 +26,7 @@
         }
         /* Conteúdo principal */
 
-        .rodada {
+        .titulo-rodada {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             text-align: center;
@@ -38,6 +38,13 @@
             color: #f4f4f4;
         }
 
+        .rodada {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
         .partidas {
             display: flex;
             flex-direction: row;
@@ -46,6 +53,22 @@
             flex-grow: 1;
             flex-wrap: wrap;
             gap: 10px;
+            width: 50%;
+        }
+
+        .tabela {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 50%;
+        }
+
+        .estilo-da-tabela, th{
+            border: 1px solid black;
         }
 
         .partida {
@@ -67,10 +90,13 @@
         }
 
         .placar, .versus {
-            font-size: x-large;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+            padding-top: 5px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+            font-size: xx-large;
             text-align: center;
+            
         }
         
         /* Escudo dos times */
@@ -160,8 +186,8 @@
     <header class="header-principal">
         BRASILEIRÃO 2026
     </header>
-    <section id="rodada-1">
-        <h2 class="rodada">RODADA 1 DE 38</h2>
+    <h2 class="titulo-rodada">RODADA 1 DE 38</h2>
+    <section class="rodada" id="rodada-1">
         <div class="partidas">
             <div class="partida">
                 <div class="clube vitoria"></div>
@@ -233,73 +259,24 @@
                 <div class="placar">0</div>
                 <div class="clube cruzeiro"></div>
             </div>
+        </div>
+        <div class="tabela">
+            <table class="estilo-da-tabela">
+                <thead>
+                    <tr>
+                        <th>CLASS</th>
+                        <th>CLUBE</th>
+                        <th>PTS</th>
+                        <th>VIT</th>
+                        <th>E</th>
+                        <th>DERR</th>
+                        <th>GM</th>
+                        <th>GC</th>
+                        <th>SG</th>
+                    </tr>
+                </thead>
+            </table>
         </div> 
     </section>
-    <section id="rodada-2">
-        <h2 class="rodada">RODADA 2 DE 38</h2>
-        <div class="partidas">
-            <div class="partida">
-                <div class="clube flamengo"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">1</div>
-                <div class="clube internacional"></div>
-            </div>
-             <div class="partida">
-                <div class="clube bragantino"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">0</div>
-                <div class="clube atletico-mineiro"></div>
-            </div>
-            <div class="partida">
-                <div class="clube santos"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">1</div>
-                <div class="clube sao-paulo"></div>
-            </div>
-            <div class="partida">
-                <div class="clube remo"></div>
-                <div class="placar">2</div>
-                <div class="versus">x</div>
-                <div class="placar">2</div>
-                <div class="clube mirassol"></div>
-            </div>
-            <div class="partida">
-                <div class="clube palmeiras"></div>
-                <div class="placar">5</div>
-                <div class="versus">x</div>
-                <div class="placar">1</div>
-                <div class="clube vitoria"></div>
-            </div>
-            <div class="partida">
-                <div class="clube gremio"></div>
-                <div class="placar">5</div>
-                <div class="versus">x</div>
-                <div class="placar">3</div>
-                <div class="clube botafogo"></div>
-            </div>
-            <div class="partida">
-                <div class="clube bahia"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">1</div>
-                <div class="clube fluminense"></div>
-            </div>
-            <div class="partida">
-                <div class="clube vasco"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">1</div>
-                <div class="clube chapecoense"></div>
-            </div>
-            <div class="partida">
-                <div class="clube cruzeiro"></div>
-                <div class="placar">1</div>
-                <div class="versus">x</div>
-                <div class="placar">2</div>
-                <div class="clube coritiba"></div>
-            </div>
 </body>
 </html>
